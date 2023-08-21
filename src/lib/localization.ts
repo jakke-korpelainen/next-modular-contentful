@@ -4,7 +4,7 @@ import { LanguageResult } from "@/types/LanguageResult";
 /**
  * Supported languages of the application
  */
-export const supportedLanguages: Language[] = [Language.English];
+export const supportedLanguages: Language[] = [Language.English, Language.Finnish];
 
 /**
  * Default language of the application
@@ -16,6 +16,7 @@ export const DEFAULT_LANGUAGE = Language.English;
  */
 export const LanguageNames = {
   "en-US": "English",
+  "fi-FI": "Suomi",
 };
 
 /**
@@ -23,6 +24,7 @@ export const LanguageNames = {
  */
 export const CountryCodes = {
   "en-US": "en",
+  "fi-FI": "fi",
 };
 
 /**
