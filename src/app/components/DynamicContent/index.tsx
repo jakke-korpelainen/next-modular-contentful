@@ -14,7 +14,7 @@ import {
 } from "@/lib/contentful/types";
 
 import type { DynamicModuleOneColumnProps } from "./DynamicModuleOneColumn";
-import { DynamicSubModuleContentProps } from "./DynamicSubModuleContent";
+import type { DynamicSubModuleContentProps } from "./DynamicSubModuleContent";
 import type { DynamicSubModuleImageWithContentProps } from "./DynamicSubModuleImageWithContent";
 import type { DynamicSubModuleLeadingTextProps } from "./DynamicSubModuleLeadingText";
 import type { DynamicSubModuleRevealOnScrollProps } from "./DynamicSubModuleRevealOnScroll";
