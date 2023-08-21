@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adjust to your liking */
+
+@layer base {
+  main a {
+    @apply text-orange;
+  }
+
+  main a:hover {
+    @apply underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  footer a:hover {
+    @apply underline;
+  }
+
+  .prose a {
+    @apply text-orange underline-offset-8;
+  }
+
+  /* These below are not necessary. For my content these were useful. */
+
+  .prose h5 + h4 {
+    @apply mt-10;
+  }
+
+  .prose h4:has(+ h5) {
+    @apply pb-5;
+  }
+
+  .prose h4 + p + h4 {
+    @apply mt-10;
+  }
+
+  .prose h3 + p {
+    @apply ml-10 text-xs;
+  }
+
+  .prose h5 + p:last-of-type:has(> em) {
+    @apply mt-10 block;
+  }
+}
