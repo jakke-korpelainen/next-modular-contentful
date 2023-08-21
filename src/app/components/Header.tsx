@@ -15,7 +15,7 @@ interface LogoProps extends Pick<LanguageResult, "requestedLanguage"> {
   startPageUrl: string;
 }
 
-const logoClassNames = `flex flex-col gap-0 text-xs font-extrabold uppercase sm:flex-row sm:gap-2 sm:text-2xl md:gap-2 lg:text-4xl xl:text-[2.5707rem]`;
+const logoClassNames = `flex flex-col gap-0 text-xs text-orange font-extrabold sm:flex-row sm:gap-2 sm:text-2xl md:gap-2 lg:text-4xl xl:text-[2.5707rem]`;
 const siteNameKey = (id: string | number) => `site-name-word-${id}`;
 const Logo = ({ requestedLanguage, logo, siteName, startPageUrl }: LogoProps) => (
   <Link href={`/${requestedLanguage}/${startPageUrl}`}>
