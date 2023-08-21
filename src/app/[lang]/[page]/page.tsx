@@ -27,7 +27,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export const dynamicParams = true;
 
-export const revalidate = 3600; // 1 hour, change to your liking
+/**
+ * Revalidate page every x seconds
+ */
+export const revalidate = 0; // 3600; // 1 hour, change to your liking
 
 /**
  * Generate static paths for all pages
