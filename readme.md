@@ -28,7 +28,7 @@ First, run the development server:
 
 The server will start at `http://localhost:3000`, by default the site retrieves the content from my demo space.
 
-### Forking
+### How to use
 
 - Create or sign into your a new Contentful account
 - Create a new space or navigate to your existing one
