@@ -4,23 +4,23 @@ Built using the new Next.js App Router. Styled using Tailwind, and written in gl
 
 Accepting pull requests, feedback, and improvement suggestions.
 
-## Welcome to next-modular-contentful
+[Demo](https://next-modular-contentful.jakke.fi/en-US/home)
 
-This boilerplate has been built using the new Next.js App Router. Styled using Tailwind, and written in glorious Typescript which makes it easier to manage the Contentful types and its GraphQL API. This is by far the best feeling combination to create anything remotely maintainable and keeps the chaos at bay.
+## Modularity
 
 All of the default modules are modular, customizable, and can be used or extended however you like. You can easily implement new typed modules following the existing implementations of modules in the dynamic module system. I'll try to document this a more throughly in future, for now you're on your own with exploring my "self-documenting code".
 
-`src\app\components\DynamicContent\index.tsx`
+[src\app\components\DynamicContent\index.tsx](https://github.com/jakke-korpelainen/next-modular-contentful/blob/main/src/app/components/DynamicContent/index.tsx#L50)
 
-The whole project was initially built by me for a client in ~28 hours, and since the result was so easy and modular I wanted to publish it as a boilerplate for anyone to use. With the clients permission this was possible, a big thanks to [Smart Data Force](https://www.smartdataforce.io).
+The whole project was initially built by me for a client in ~28 hours, and since the result was so easy and modular I wanted to publish it as a boilerplate for anyone to use. With the clients permission this was possible, a big thanks to Smart Data Force.
 
-### Installation
+## Installation
 
 [Node.js 16.8](https://nodejs.org/) or later is required.
 
 `npm install`
 
-### Getting Started
+## Getting Started
 
 First, run the development server:
 
@@ -28,7 +28,7 @@ First, run the development server:
 
 The server will start at `http://localhost:3000`, by default the site retrieves the content from my demo space.
 
-### How to use
+### Forking
 
 - Create or sign into your a new Contentful account
 - Create a new space or navigate to your existing one
@@ -46,19 +46,19 @@ The server will start at `http://localhost:3000`, by default the site retrieves 
     - `supportedLanguages` to your contentful languages
     - `LanguageNames` to language names
     - `LanguageCodes` to language codes
-- Adjust revalidation time in `src\lib\contentful.ts`
+- Adjust revalidation time in `src\app\[lang]\[page]\page.tsx` and `src\lib\contentful.ts`
 
 Now your site should be ready for further customization! Let me know if you've used this boilerplate, I'd love to see what you've built.
 
-#### Useful information
+## Useful information
 
-##### Docs of used libraries
+### Docs of used libraries
 
 - [Next.js](https://nextjs.org/docs)
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [react-social-icons docs](https://jaketrent.github.io/react-social-icons/)
 
-##### Contentful
+### Contentful
 
 - [Localization with Contentful](https://www.contentful.com/developers/docs/tutorials/general/setting-locales/)
 - [Creating and managing API keys](https://training.contentful.com/student/page/1050378-api-keys)
