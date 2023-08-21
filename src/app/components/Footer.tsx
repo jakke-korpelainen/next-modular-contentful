@@ -14,6 +14,7 @@ export const Footer = ({ globalSettings }: FooterProps) => {
       <div className="2xl:max-w-screen-xl mx-auto w-full md:max-w-screen-md lg:max-w-screen-lg">
         <div className="flex flex-col justify-between gap-5 p-5 py-10 sm:flex-row xl:px-0">
           <div className="flex flex-col gap-5 sm:w-7/12">
+            {/* This could be added to the GlobalSettings type as a configurable content */}
             <p>
               This is a modular nextjs+contentful boilerplate created by{" "}
               <a href="https://jakke.fi">Jakke Korpelainen</a>
@@ -38,7 +39,7 @@ export const Footer = ({ globalSettings }: FooterProps) => {
           <div className="sm:w-5/12">
             <ul className="flex flex-col text-left font-mono sm:gap-1 sm:text-right">
               <li className="text-gray-500">{globalSettings.name}</li>
-
+              {/* These could also be added to the GlobalSettings type as configurable values */}
               <li>
                 <a href="https://jakke.fi">About me</a>{" "}
               </li>
