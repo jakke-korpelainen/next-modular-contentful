@@ -7,7 +7,7 @@ interface NavigationLinkProps {
   url: string;
 }
 
-const linkClass = "font-heading text-xl sm:text-2xl font-extrabold uppercase font-bold";
+const linkClass = "font-heading text-base sm:text-2xl font-extrabold uppercase font-bold";
 const activeClass = "border-b-4 border-white";
 
 export const NavigationLink = ({ name, language, url }: NavigationLinkProps) => {
