@@ -44,7 +44,7 @@ export const Footer = ({ globalSettings }: FooterProps) => {
                 <a href="https://jakke.fi">About me</a>{" "}
               </li>
               <li>
-                <a href="https://nextjs.org/">NextJs</a>
+                <a href="https://nextjs.org/">Next.js</a>
               </li>
               <li>
                 <a href="https://www.contentful.com/">Contentful</a>
