@@ -40,7 +40,6 @@ export interface DynamicComponentProps {
   content?: unknown;
   typename?: string;
   id?: string | null;
-  [key: string]: any;
 }
 
 /**
@@ -56,7 +55,7 @@ export const KnownModules: Record<ContentfulTypes, DynamicComponentTypes> = {
   [SubModuleRevealOnScroll]: dynamic(() => import("./DynamicSubModuleRevealOnScroll")),
   [ModuleTwoColumn]: dynamic(() => import("./DynamicTwoColumn")),
   [ModuleOneColumn]: dynamic(() => import("./DynamicModuleOneColumn")),
-};
+} as const;
 
 /**
  * Entry point for dynamic content from contentful, used recursively (when necessary) from within the components

@@ -30,6 +30,10 @@ export const proseDefaultClasses = `
   prose-ol:font-mono
   prose-ol:text-base
   prose-ol:gap-2
+  
+  prose-code:whitespace-pre-line
+  prose-code:break-all
+  prose-code:sm:break-normal
 
   prose-strong:text-xl
   prose-strong:font-heading
