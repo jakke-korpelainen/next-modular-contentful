@@ -8,7 +8,7 @@ export interface DynamicModuleOneColumnProps extends DynamicComponentProps {
   content: ContentfulOneColumn;
 }
 
-const subContentClasses = "prose-p:text-xl text-center";
+const subContentClasses = "text-base prose-p:lg:text-xl text-center";
 
 export default function DynamicModuleOneColumn({ id, ...props }: DynamicModuleOneColumnProps) {
   const { content } = props;
